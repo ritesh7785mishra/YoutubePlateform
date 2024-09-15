@@ -1,12 +1,13 @@
 "use client";
 
+import { GoogleSignInButton } from "@/components/authButtons";
 import { signIn } from "next-auth/react";
 
 export default function Login() {
 	return (
 		<div>
 			<h1>Login</h1>
-			<button onClick={() => signIn("google")}>Sign in with Google</button>
+			<GoogleSignInButton />
 			{/* Replace 'google' with your OAuth provider */}
 		</div>
 	);
